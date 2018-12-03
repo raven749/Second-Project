@@ -4,52 +4,108 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rosie Odenkirk</title>
+    <title>Sun Location Application</title>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+
 </head>
 
 <body>
-    <header class="container-fluid">
+    
+    <section class="container-fluid">
         <div class="row">
-            <a href="index.html">
-                <div class="col-md-4 logo"></div>
-            </a>
-            <div class="col-md-8">
-                <div class="row bg-color-name-title">
-                    <div class="heading">
-                        <h1 class="name">Rosie Odenkirk</h1>
-                        <h2 class="title"> Full Stack Developer</h2>
-                    </div>
-                </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="card-body">
                 <div class="row">
-                    <ul id="nav" class="list-inline clearfix">
-                        <li class="col-xs-6 col-sm-2 ui-menu-color-home menuitem">
-                            <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
-                        </li>
-                        <li class="col-xs-6 col-sm-2 ui-menu-color-resume menuitem">
-                            <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
-                        </li>
-                        <li class="col-xs-6 col-sm-2 ui-menu-color-contact menuitem">
-                            <a href="contact.html" class="hvr-sweep-to-bottom"><i class=" fa fa-commenting-o" aria-hidden="true"></i><span>Contact</span></a>
-                        </li>
-                        <li class="col-xs-6 col-sm-2 ui-menu-color-interests menuitem">
-                            <a href="interests.html" class="hvr-sweep-to-bottom"><i class="fa fa-users" aria-hidden="true"></i><span>Interests</span></a>
-                        </li>
-                        <li class="col-xs-6 col-sm-2 ui-menu-color-github menuitem">
-                            <a href="github.html" class="hvr-sweep-to-bottom"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a>
-                        </li>
-                        <li class="col-xs-6 col-sm-2 ui-menu-color-download menuitem">
-                            <a href="assets/cv/sample-cv.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download CV</span></a>
-                        </li>
-                    </ul>
+                    <div class="col-md-3 col-lg-4">
+                        <div class="form-group">
+                            <label class="control-label">Location</label>
+                            <input type="text" class="form-control" id="location" placeholder="Enter Location">
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-lg-">
+                         <div class="form-check">
+                            <input type="checkbox" class="form_check-input" id="current_location">
+                            <label class="form-check-label" for="defaultUnchecked">Current Location</label>
+                          </div>
+                    </div>
+                    <div class="col-md-3 col-lg-4">
+                         <div class="form-group">
+                             <label class="control-label" for="date">Date</label>
+                             <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-lg-3">
+                        <div class="form-group">
+                            <label class="control-label">Date Of Birth</label>
+                            <div class="input-group date">
+                                <input class="form-control" type="text" />
+                               <span class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button">
+                                        <i class="fa fa-calendar"></i>
+                                    </button></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <div class="form-group">
+    		                <button type="button" class="btn btn-info  .navbar-right">Help</button>
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-lg-4">
+                            <div class="form-group">
+                                <label class="control-label">Latitude</label>
+                                <input type="text" class="form-control" id="latitude" placeholder="Enter Latitude">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-4">
+                            <div class="form-group">
+                                <label class="control-label">Longitude</label>
+                                <input type="text" class="form-control" id="longitude" placeholder="Enter Longitude">
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <div class="form-group">
+    		                    <button type="button" class="btn btn-primary btn-lg active" role="button" type="submit">Date / Time</button>
+                            </div> 
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <div class="form-group">
+    		                    <button type="button" class="btn btn-primary btn-lg active" role="button"  type="submit">Now</button>
+                            </div> 
+                        </div>                        
+                        
+                        
                 </div>
             </div>
         </div>
-    </header>
+
+                <div class="row">
+                    <div class="col-md-3 col-lg-12">
+                        <div class="form-group">
+                            <label class="control-label">High School College/Name</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    $('#datetimepicker1').datetimepicker();
+                });
+            </script>
+        
+
     <section class="container-fluid">
         <div class="row row-table">
             <div class="col-xs-12 col-sm-12 col-md-4 bg-color-conferences section-column">
