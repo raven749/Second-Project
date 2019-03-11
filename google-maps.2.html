@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sun Location Application</title>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src = "http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!--</head>-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+     <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+     
+
+    
+    <!--<script type=”text/javascript” src=”//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js”></script>-->
+    <!--<script src="src/js/jquery.placepicker.js"></script>-->
+    <!--<script src="http://maps.googleapis.com/maps/api/js?sensor=true&libraries=places"></script>-->
+    <!--<script src="js/jquery.placepicker.min.js"></script>-->
+
+    <script src="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker-standalone.css">-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker.min.css"> 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker-standalone.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/js/bootstrap-datetimepicker.min.js"></script>
+    <!--<script type='text/javascript' src='https://maps-api-ssl.google.com/maps/api/js?v=3.3&sensor=false'></script>-->
+    <!--<script src="/geocomplete-master/jquery.geocomplete.js"></script>-->
+    
+    <!--<src="https://maps.googleapis.com/maps/api/js?sensor=true&language=en&libraries=places"></script>-->
+    <!--<script src="https://www.jqueryscript.net/demo/jQuery-Location-Autocomplete-with-Google-Maps-Places-Library-Placepicker/placepicker/src/js/jquery.placepicker.js"></script>-->
+
+    <!--<script src="https://maps.googleapis.com/maps/api/js?sensor=true&libraries=places"></script>-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDndyUuuKvyYkXMwSimvwofoM-_pa7UC&sensor=true&libraries=places%22%3E%3C"></script>
+    <!--<script src="/placepicker/js/jquery.placepicker.js"></script>-->
+     <!--<script type="text/javascript" src="/placepicker/src/js/jquery.placepicker.js"></script>-->
+     <!--<script type="text/javascript" src="//placepicker/src/js/jquery.placepicker.js"></script>-->
+     <script type="text/javascript" src=""placepicker/src/js/jquery.placepicker.js"></script>
+     <!--<script src="js/jquery.placepicker.min.js"></script>-->
+
+</head>
+
+<body>
+    
+    <section class="container-fluid  id='map-form'">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="row">
+                        <form class="form-inline" role="form">
+                                  <!--<div class="col-md-4">-->
+                                  <!--<div class="col-xs-10">-->
+                                <div class="form-group">
+                                    <label class="control-label">Location</label>
+                                    <!--<div class="col-sm-10">-->
+                                    <!--<input type="text" class="form-control" id="address" placeholder="Enter Location">-->
+                                    
+                                    <input id="placepicker" class="form-control" placeholder="Enter Location">
+                                </div>
+                               <!--<div class="col-md-4">-->
+                               <!--<div class="col">-->
+                                <!--<div class="form-group float-left">-->
+            		                  <button type="button" class="btn btn-primary btn-lg active location-btn" role="button  pull-left"  
+            		                  type="submit" id="location_btn" onclick="myLocation()">location</button>
+                                <!--</div> -->
+                                <!--</form>-->
+                                <!-- <form class="form-inline" role="form">-->
+                                <!--<div class="form-group">-->
+                                 <div class="checkbox-inline checkbox-primary location checkbox">
+                                    <label  for="default" class="form-check-label">Current Location</label>                                 
+                                   <input type="checkbox"  id="current_location" onclick="ShowCurrentLocation(this)" type="checkbox"  unchecked>
+                                </div>  
+                                <!--</div>-->
+                                <div class="form-group flex-left">
+                                    <label class="control-label">Date / Time</label>
+                                    <div class="input-group date"  id='DateTimePicker'>
+                                        <input class="form-control" type="text" />
+                                       <span class="input-group-addon">
+                                            <button class="btn btn-outline-secondary" type="button">
+                                                <i class="fa fa-calendar"></i>
+                                            </button></span>
+                                    </div>
+                                <!--</div>-->
+                                <!--<div class="form-group flex-left">-->
+            		                  <button type="button" class="btn btn-primary btn-lg active" role="button"  type="submit">Now</button>
+                                </div> 
+                                <div class="form-group text-right">
+            		                <button type="button" class="btn btn-info  .navbar-right">Help</button>
+                                </div> 
+                                
+                                
+                                <script type="text/javascript">
+                
+                                // function for DateTimePicker
+                
+                                // $(function () {
+                                //   $('#DateTimePicker').DateTimePicker();
+                                   $('#DateTimePicker').datetimepicker();
+                                // });
+                                
+                            //    var date = $('#date').val(); 
+                
+                              </script>
+                                
+                                <!--<div/        -->
+                                <div/>
+                                <div class="row">
+                                                        <!--<form class="form-inline" role="form">                                -->
+                                    <div>
+                                        <div class="form-group">
+                                            <label class="control-label">Latitude</label>
+                                            <input type="text" class="form-control" id="latitude" placeholder="Enter Latitude">
+                                        </div>
+                                   
+                                        <div class="form-group">
+                                            <label class="control-label">Longitude</label>
+                                            <input type="text" class="form-control" id="longitude" placeholder="Enter Longitude">
+                                        </div>
+                                    </div>    
+                                </div>
+                        </form>                            
+                    </div>
+                </div>
+            </div>
+        </section/>
+
+  
+        <!--// </div>-->
+        
+
+
+        
+    <!--</section>-->
+    
+    <div id="map"></div>
+    
+    <footer>
+    </footer>
+
+    
+    //   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDndyUuuKvyYkXMwSimvwofoM-_pa7UC-c&callback=initMap">
+    
+    
+   
+    // <script src="http://maps.googleapis.com/maps/api/js?libraries=geometry&sensor=false&key=AIzaSyDndyUuuKvyYkXMwSimvwofoM-_pa7UC-c&callback=initMap">
+    
+    
+    // <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDndyUuuKvyYkXMwSimvwofoM-_pa7UC-c&signed_in=true&libraries=places&callback=initialize" async defer></script>
+    
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDndyUuuKvyYkXMwSimvwofoM-_pa7UC-c&libraries=places&callback=initMap" async defer></script>
+        
+      <!--<script src="assets/js/maps.js"></script>-->
+
+    </script>
+    <!--<script src="assets/js/maps.js"></script>-->
+</body>
+    
+    <script type="text/javascript">
+    
+    //    $(document).ready(function() {
+    
+     //       $(".placepicker").placepicker();
+            
+    //    });    
+
+
+             var map, infoWindow;
+               function initMap() {
+                 map = new google.maps.Map(document.getElementById('map'), {
+                   center: {lat: -34.397, lng: 150.644},
+                   zoom: 6
+                 });
+                 infoWindow = new google.maps.InfoWindow;
+        
+                 // Try HTML5 geolocation.
+                 if (navigator.geolocation) {
+                   navigator.geolocation.getCurrentPosition(function(position) {
+                     var pos = {
+                       lat: position.coords.latitude,
+                       lng: position.coords.longitude
+                     };
+        
+                     infoWindow.setPosition(pos);
+                     infoWindow.setContent('Location found.');
+                     infoWindow.open(map);
+                     map.setCenter(pos);
+                   }, function() {
+                     handleLocationError(true, infoWindow, map.getCenter());
+                   });
+                 } else {
+                   // Browser doesn't support Geolocation
+                   handleLocationError(false, infoWindow, map.getCenter());
+                 }
+               }
+        
+               function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+                 infoWindow.setPosition(pos);
+                 infoWindow.setContent(browserHasGeolocation ?
+                                       'Error: The Geolocation service failed.' :
+                                       'Error: Your browser doesn\'t support geolocation.');
+                 infoWindow.open(map);
+               }
+              
+        
+
+
+
+
+
+
+
+
+
+
+    
+    
+    // function for Location Button 
+    
+    var location = $('#address').val();
+    
+    function myLocation() {
+
+               
+   //   function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: {lat: -34.397, lng: 150.644}
+         });
+        var geocoder = new google.maps.Geocoder();
+
+
+        document.getElementById('location_btn').addEventListener('click', function() {
+          geocodeAddress(geocoder, map);
+        // });
+        });
+      // }
+      
+            function geocodeAddress(geocoder, resultsMap) {
+        var address = document.getElementById('address').value;
+        geocoder.geocode({'address': address}, function(results, status) {
+          if (status === 'OK') {
+            resultsMap.setCenter(results[0].geometry.location);
+            var marker = new google.maps.Marker({
+              map: resultsMap,
+              position: results[0].geometry.location
+            });
+          } else {
+            alert('Geocode was not successful for the following reason: ' + status);
+          }
+        // });
+            });
+      }
+      }
+      
+      
+      
+              // get Current Location        
+                
+
+        function ShowCurrentLocation() {
+    
+             var map, infoWindow;
+            //   function initMap() {
+                 map = new google.maps.Map(document.getElementById('map'), {
+                   center: {lat: -34.397, lng: 150.644},
+                   zoom: 6
+                 });
+                 infoWindow = new google.maps.InfoWindow;
+        
+                 // Try HTML5 geolocation.
+                 if (navigator.geolocation) {
+                   navigator.geolocation.getCurrentPosition(function(position) {
+                     var pos = {
+                       lat: position.coords.latitude,
+                       lng: position.coords.longitude
+                     };
+        
+                     infoWindow.setPosition(pos);
+                     infoWindow.setContent('Location found.');
+                     infoWindow.open(map);
+                     map.setCenter(pos);
+                   }, function() {
+                     handleLocationError(true, infoWindow, map.getCenter());
+                   });
+                 } else {
+                   // Browser doesn't support Geolocation
+                   handleLocationError(false, infoWindow, map.getCenter());
+                 }
+               // }
+        
+               function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+                 infoWindow.setPosition(pos);
+                 infoWindow.setContent(browserHasGeolocation ?
+                                       'Error: The Geolocation service failed.' :
+                                       'Error: Your browser doesn\'t support geolocation.');
+                 infoWindow.open(map);
+               }
+              
+       }
+      
+      
+    </script>
+
+
+</html>

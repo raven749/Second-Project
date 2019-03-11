@@ -8,7 +8,7 @@ This application is designed for photographers to allow the Sun Position to be s
 
 To obtain the proper lighting for a photograph a photographer needs to know the position of the sun in the sky in relation to what he's trying to photograph.
 
-If a photographer goes to photograph a tousist location like the Sphinx for example he will want to know when the sun will be in the right position to 
+If a photographer goes to photograph a tourist location like the Sphinx for example he will want to know when the sun will be in the right position to 
 light up is face with side frontal lighting to reveal the detail. Tourist attractions near the current locaion can be displayed to give a photographer other
 options to photograph.
 
@@ -22,6 +22,9 @@ the best shot and this application will put you in the best possible position to
 
 # Sequence of Events
 
+This is a guide to the user interaction. The following describes the actions expected to be performed by the user and the expected sequence 
+of these actions. Also the expected information to be diplayed on the screen.
+
 The user has the choice to either use their current location by clicking on a Current Location Radio Button (Current Location retrieved using Geolocation for example) 
 or the user can enter and search for a location.
 
@@ -32,17 +35,55 @@ Otherwise once a Location is entered and the ‘Location’ button is clicked, t
 There is also an option to search using Lattitude and Longitude as photographers sometimes use Ordnance Survey Maps to look for Locations and the Lattitude and Longitude
 of these locations might not be near an actual location that can be entered.
 
-The user will then select a Date and/or Time from a list using Javascript.
+The user will then select a Date and/or Time from a list.
 
 There is also a button called ‘Now’ which will allow the user to select the current Date and Time instead of entering a Date and Time.
 
-Once a Location and a Date and time is entered, the Sun Position will be displayed on the Google Map by passing the parameters to the SunCalc API.
-The API will perform the Sun Position Calculations and return the results and graphically display them on the Google Map.
+Once a Location and a Date and time is entered, the Sun Position will be displayed on the Google Map 
 
-The positions and times of the Sunrise and Sunset for the Current Location are also retrieved and displayed using the SunCalc API.
+The positions and times of the Sunrise and Sunset for the Current Location are also retrieved and displayed on the Map.
 
-Nearby Tourist Destinations will also be retrieved using a Google Maps API which access a Places Library and these are displayed on the Map.
+Nearby Tourist Destinations will also be retrieved and these are displayed on the Map.
 
 Any changes to the Location and Date and Time will be updated on the Google Map, displaying the new Sun Positions and Tourist Destinations.
 
+# Technologies Used
 
+The Technologies used in this project are as follows:
+
+## HTNL5
+
+HTML5 was used for the structure and presentation of the.Web Page including text fields and buttons.
+
+## CSS3
+
+CCS3 was used to for the presentation of the web page to custoimise the look and feel of the page
+
+## Bootstrap
+
+Botstrap was used to create a responsive design, ensuring the entry fields and buttons scale to the screen and to ensure
+maximum use of avalable area of the screen for the Google Map.
+
+## Javascript
+
+Javascript was used for the following:
+
+### Date Time List
+
+The Date/ Time Pick List was created by calling a Javascript library class **bootstrap-datetimepicker** which is responsive (Bootstrap Class)
+
+### Google Maps
+
+Google Maps was displayed using a Javascript API call to the Google Maps Object and then a Javascript file is called
+to obtain urther location details
+
+### Sun Position
+
+By passing parameters to the SunCalc API, the Sun Position, Sunrise position and Sunset position are calculated
+and the results are graphically display them on the Google Map.
+
+### Tourist Destinations
+
+Tourist Destinations will also be retrieved using a Google Maps API which access a Places Library and these are displayed on the Map.
+
+# Deployment
