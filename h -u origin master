@@ -1,0 +1,47 @@
+[33mcommit d133d1be2ce6006489a181894cc0fe07b966fc3c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Robert Sweeten <thetwacorbies@googlemail.com>
+Date:   Wed Jun 26 09:16:56 2019 +0000
+
+    Fixed problems with Place Changed
+
+[33mcommit 2af843e50b9a16b78abec2679639fea2da03e9ad[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Robert Sweeten <thetwacorbies@googlemail.com>
+Date:   Mon Mar 11 15:19:36 2019 +0000
+
+    PlacePicker Working
+
+[33mcommit 5a5f33187fb2db439c3d0a06c05daefeb9252f3d[m
+Author: Robert Sweeten <thetwacorbies@googlemail.com>
+Date:   Mon Dec 3 21:40:14 2018 +0000
+
+    Added Proper REDME.md
+
+[33mcommit 47e16c0b491d40cf0eec6245de0354f5bd489e58[m
+Author: Robert Sweeten <thetwacorbies@googlemail.com>
+Date:   Mon Dec 3 14:59:44 2018 +0000
+
+    First Save - Design
+
+[33mcommit 982fdef9350fa9f576df501c86a89abdc36adac6[m
+Author: Robert Sweeten <thetwacorbies@googlemail.com>
+Date:   Mon Oct 29 16:34:10 2018 +0000
+
+    implement emailjs integration on contact page
+
+[33mcommit c18b90c103c2e45d2b10fe92dc737e7f266fe7b0[m
+Author: Robert Sweeten <thetwacorbies@googlemail.com>
+Date:   Wed Oct 24 10:49:16 2018 +0000
+
+    Fix bugs for the gh-user-data & gh-repo-data elements
+
+[33mcommit 66893cbaa9bea58b76dcca4d2ce98c379bce3836[m
+Author: Robert Sweeten <thetwacorbies@googlemail.com>
+Date:   Wed Oct 24 10:32:28 2018 +0000
+
+    Fetch Repo Information for users
+
+[33mcommit 593665fbc604e622a2100213aa1be6cd25ee4363[m
+Author: Robert Sweeten <thetwacorbies@googlemail.com>
+Date:   Tue Oct 23 14:07:55 2018 +0000
+
+    Implement Google Maps with Marker functionality

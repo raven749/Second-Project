@@ -1,4 +1,10 @@
-var map, infoWindow;
+var map, infoWindow, geocoder, location, 
+		sunrise, daylength,
+		marker, sunrisePolyline, sunsetPolyline, sunPolyline, sunInfoOverlay,
+		geolocationInProgress,
+		limitedUpdateResult = limitExecByInterval(updateResult, 40),
+		date = new Date(),
+		moreDetailed = false;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -34.397, lng: 150.644},
